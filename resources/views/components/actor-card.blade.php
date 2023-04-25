@@ -1,5 +1,5 @@
 <div class="card" >
-    <img src="{{ $actor['avatar'] }}" class="card-img-top" alt="...">
+    <img src="{{ $actor['avatar'] }}" class="card-img-top" >
     <div class="card-body">
         <h5 class="card-title">{{ $actor['name'] }}</h5>
         <p class="card-text">

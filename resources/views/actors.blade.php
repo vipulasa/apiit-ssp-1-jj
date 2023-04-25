@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             @foreach ($actors as $actor)
                 <div class="col-md-3">
-                    <x-actor-card :actor="$actor" />
+                    <x-actor-card :actor="$actor" name="test" />
 
                     {{-- <div class="card" >
                         <img src="{{ $actor['avatar'] }}" class="card-img-top" alt="...">
