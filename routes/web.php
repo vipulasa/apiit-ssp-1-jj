@@ -24,7 +24,12 @@ Route::get('/actors', function () {
         [
             'name' => 'Tom Cruise',
             'bio' => 'Tom Cruise is an American actor and producer. He has received various accolades for his work, including three Golden Globe Awards and three nominations for Academy Awards.',
-            'avatar' => 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQIX0lA4_QAU3DpEar0jPCd197Hz3oHqKKrNU_de9oN45UH8HzppcaPWrMtU7AyBj3ecdMRf7Tm8w_YnX1uDdbY4zeECOPIrvu68uG4m1y8'
+            'avatar' => 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQIX0lA4_QAU3DpEar0jPCd197Hz3oHqKKrNU_de9oN45UH8HzppcaPWrMtU7AyBj3ecdMRf7Tm8w_YnX1uDdbY4zeECOPIrvu68uG4m1y8',
+            'gallery' => [
+                'https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg',
+                'https://pyxis.nymag.com/v1/imgs/b39/e77/b9fa5f81b1c04bbf439ef40515b1b6e464-tom-cruise.1x.rsquare.w1400.jpg',
+                'https://people.com/thmb/FtpGqwQPi-77-bNmtQCYBcEMKmw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(665x0:667x2)/GettyImages-74286514-2000-aac2c3aecaea472cb949824230cb5370.jpg',
+            ]
         ],
         [
             'name' => 'Will Smith',
