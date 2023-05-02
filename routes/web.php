@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,10 +14,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/test/{id?}', [TestController::class, 'test']);
+
+Route::resource('product', ProductController::class);
 
 Route::get('/actors', function () {
 
@@ -73,8 +80,9 @@ Route::get('/actors', function () {
     ]);
 });
 
-Auth::routes();
-
 Route::get('/home', [
     App\Http\Controllers\HomeController::class, 'index'
 ])->name('home');
+
+
+
